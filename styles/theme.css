@@ -1,0 +1,19 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-primary: #4a90e2;
+  --font-base: 'Inter', sans-serif;
+}
+[data-theme="dark"] {
+  --color-bg: #111111;
+  --color-text: #f1f1f1;
+  --color-primary: #1e7ae3;
+}
+html {
+  font-family: var(--font-base);
+  transition: background .2s, color .2s;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
